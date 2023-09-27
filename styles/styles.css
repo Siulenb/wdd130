@@ -19,10 +19,11 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    float: right;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 p {
     padding: 10px;
@@ -48,6 +49,11 @@ aside img {
     height: auto;
 }
 
+aside h2{
+    position: absolute;
+    top: 15px;
+}
+
 p { padding: 0;}
 
 footer {
@@ -56,8 +62,7 @@ footer {
     text-align: center;
 }
 
-/*Class selectors*/
-
+/* Class Selectors */
 .box {
     margin: 1rem;
     padding: 1rem;
@@ -65,7 +70,3 @@ footer {
     text-align: justify;
 }
 
-aside h2{
-    position: absolute;
-    top: 15px;
-}
