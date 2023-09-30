@@ -78,7 +78,7 @@ nav a:hover {
 .hero h1 {
 	position: absolute;
 	top: 25px;
-	left: 450px;
+	left: 300px;
 	background: radial-gradient(var(--accent2-color), var(--nav-bacground-color));
 	border: 1px solid #000;
 	padding: 0.65rem;
