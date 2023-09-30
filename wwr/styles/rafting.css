@@ -16,11 +16,12 @@
 
 /* Default setting of css */
 
-body {
+/* body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
-}
+} */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
@@ -59,21 +60,44 @@ nav a:hover {
 
 /* CSS Classes */
 
-.sociallinks {
+.socialinks {
     text-decoration: none;
 }
 
 .hero {
-    position: relative;
-    display: block;
+	margin: 10px auto;
+	position: relative;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+.hero #red {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
-.hero h1, article {
+.hero h1 {
+	position: absolute;
+	top: 25px;
+	left: 450px;
+	background: radial-gradient(var(--accent2-color), var(--nav-bacground-color));
+	border: 1px solid #000;
+	padding: 0.65rem;
+	box-shadow: 0 0 30px #111;
+	opacity: 0.8;
+}
+
+.hero article {
     position: absolute;
+	bottom: 100px;
+	left: 15px;
+	background: radial-gradient(#eee, #4567aa);
+	border: 1px solid #000;
+	padding: 0.65rem;
+	box-shadow: 0 0 30px #111;
+	opacity: 0.9;
+    text-align: left;
+}
+
+.hero article img {
+    float: right;
 }
