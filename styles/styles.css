@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kaushan+Script&family=Trykker&display=swap');
+
+:root {
+    --primary-color: #fcbb01;
+    --secondary-color: #4a9ca3;
+    --accent1-color: #616d69;
+    --accent2-color: #c9ebee;
+    --heading-font: 'Kaushan Script', serif;
+    --paragraph-font: 'Trykker', serif;
+    --nav-bacground-color: #c9ebee;
+    --nav-link-color: #616d69;
+    --nav-hover-link-color: #f7a173;
+    --nav-hover-background-color: #fef8eb;
+}
+
 * {
    margin: 0;
    padding: 0;
@@ -6,15 +21,28 @@
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
 }
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
 h1 {
     color: steelblue;
+    border-style: none none solid;
 }
 main img {
     width: 150px;
@@ -31,6 +59,7 @@ p {
 
 main {
     max-width: 840px;
+    grid-column: 2/3;
 }
 
 aside {
@@ -42,6 +71,8 @@ aside {
     color: #333;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -62,6 +93,11 @@ footer {
     text-align: center;
 }
 
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 /* Class Selectors */
 .box {
     margin: 1rem;
@@ -70,3 +106,7 @@ footer {
     text-align: justify;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
