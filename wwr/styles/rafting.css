@@ -20,6 +20,7 @@ body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    background-color: var(--nav-bacground-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,8 +29,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    padding: 20px;
+    padding: 0;
     background-color: var(--nav-bacground-color);
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 200px 1fr 2fr;
+	align-items: center;
+    justify-content: space-evenly;
+	max-width: 1000px;
+    border-style: solid none solid;
+    border-color:  var(--primary-color);
+}
+
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 175px;
+	height: auto;
+}
+
+.navigation {
+    display: flex;
+    grid-column: 2/4;
+}
+
+.navigation a {
+    flex: 1 1 100%;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-style: solid none solid;
+    border-color:  var(--primary-color);
+}
+
+.history h2 {
+    align-items: flex-start;
+    align-self: center;
+    justify-self: center;
+}
+.history p {
+    align-items: flex-end;
 }
 
 p {
@@ -39,13 +80,12 @@ p {
 nav {
     background-color: var(--nav-bacground-color);
     font-size: 1.2rem;
-    display: flex;
 }
 
 nav a {
     display: block;
     color: var(--accent1-color);
-    text-decoration: underline;
+    text-decoration: none;
     padding: 1rem;
 }
 
@@ -56,6 +96,7 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    text-decoration: underline;
 }
 
 /* CSS Classes */
