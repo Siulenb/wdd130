@@ -20,7 +20,9 @@ body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    margin: 0 auto;
     background-color: var(--nav-bacground-color);
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,6 +43,7 @@ header {
     border-color:  var(--primary-color);
 }
 
+/* CSS Classes 1 */
 .logo img {
 	margin: 0 0.25rem 0 1rem;
 	width: 175px;
@@ -73,6 +76,8 @@ header {
     align-items: flex-end;
 }
 
+
+/* standard */
 p {
     padding: 10px;
 }
@@ -99,10 +104,30 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* CSS Classes */
+figcaption {
+    font-family: var(--paragraph-font);
+    font-size: small;
+    font-style: italic;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* CSS Classes 2 */
 
 .socialinks {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialinks img {
+    width: 30px;
+    height: auto;
 }
 
 .hero {
@@ -141,4 +166,30 @@ nav a:hover {
 
 .hero article img {
     float: right;
+}
+
+.adventure {
+    display: flex;
+    flex-direction: column;
+    border-style: none none solid;
+    border-color:  var(--primary-color);
+}
+
+.adventure h2{
+    align-self: center;
+}
+
+/* .adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 70%);
+    grid-template-rows: 20% 20% 20%;
+} */
+
+.adventure img {
+    width: 700px;
+    height: auto;
+}
+
+.adventure figure {
+    align-self: center;
 }
