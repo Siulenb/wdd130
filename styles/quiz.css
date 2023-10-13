@@ -112,7 +112,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    /* width: 800px; */
 }
 
 button:hover {
@@ -132,7 +132,6 @@ footer {
     display: flex;
     flex-direction: column;
     /* align-content: space-between; */
-    align-items: right;
 }
 
 /* .column1 {
