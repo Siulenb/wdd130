@@ -1,0 +1,137 @@
+ @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kaushan+Script&family=Pixelify+Sans&family=Trykker&family=Young+Serif&display=swap');
+
+:root {
+    --heading-font: 'Pixelify Sans', sans-serif;
+    --paragraph-font: 'Young Serif', serif;
+    --primary-color: #fcbb01;
+    --secondary-color: #4a9ca3;
+    --accent1-color: #616d69;
+    --accent2-color: #c9ebee;
+    --nav-bacground-color: #c9ebee;
+    --nav-link-color: #616d69;
+    --nav-hover-link-color: #f7a173;
+    --nav-hover-background-color: #fef8eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 800px;
+}
+
+h1 {
+    margin: 2rem;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+form {
+    width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    background-color: var(--nav-hover-background-color);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.2rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: #333;
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+label, input, button, select, textarea {
+    font-family: var(--paragraph-font);
+    color: #333;
+}
+
+label {
+    text-align: left;
+    padding-left: 1rem; 
+    font-size: 1.2rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-family: 'Trykker Serif', serif;
+}
+
+input [type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 10px 10px;
+    background-color: var(--primary-color);
+    color: #333;
+    border: none;
+    border-radius: .5rem;
+    padding: 3px 5px;
+    font-size: 1.2rem;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+}
+
+button:hover {
+    background-color: var(--nav-bacground-color);
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 700px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
