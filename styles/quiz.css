@@ -131,13 +131,13 @@ footer {
 .form-item {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    align-items: center;
+    /* align-content: space-between; */
+    align-items: right;
 }
 
-.column1 {
+/* .column1 {
     margin: 0.5rem 0;
-}
+} */
 
 .column2 {
     justify-content: space-around;
