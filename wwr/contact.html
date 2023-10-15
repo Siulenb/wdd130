@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form|Luis Navarro</title>
+    <meta name="description" content="Contact form for A.R.T customers">
+    <meta name="author" content="Luis Navarro">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header class="logo">
+        <img src="images/adventure-rafting-team-logo.png" alt="Rafting Site Logo">
+        <nav class="navigation">
+            <a href="https://siulenb.github.io/wdd130/wwr/site-plan-rafting.html">index.html</a>
+            <a href="">about.html</a>
+            <a href="">trips.html</a>
+            <a href="">contact.html</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <img id="red" src="images/rafting-background.png" alt="rafting down in river">
+            <article>
+                <figure>
+                    <img src="images/employment-hero-mobile-480x350.jpg" alt="Employees group photo">
+                    <figcaption>Meet our staff</figcaption>
+                </figure>
+                <div>
+                    <p>Adventure.Rafting.Team building next to the Camp Uruyen, Bolivar Venezuela</p>
+                    <p>Phone: (999) 800-9999</p>
+                    <p>Email: <a href="art-email:">adventure.rafting.teamvz@email.com</a></p>
+                </div>
+            </article>
+        </div>
+        <section class="adventure">
+            <h2>Adventure Awaits You!</h2>
+            <form>
+                <fieldset>
+                    <legend>Contact information</legend>
+                    <div class="form-item column1">
+                        <label for="fullname">Full name:</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div class="form-item column1">
+                        <label for="useremail">Email:</label>
+                        <input type="email" id="useremail" name="useremail">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Message</legend>
+                        <div class="column3">
+                            <p>Select your purpose message:</p>
+                            <input type="radio" id="reservation-question" name="purpose-message" value="reservation-question">
+                            <label for="reservation-question">Reservation Question</label><br>
+                            <input type="radio" id="general-inquiry" name="purpose-message" value="general-inquiry">
+                            <label for="general-inquiry">General Inquiry</label><br>
+                            <input type="radio" id="website-suggestion" name="purpose-message" value="website-suggestion">
+                            <label for="website-suggestion">website suggestion</label>
+                            <!-- <select name="purpose-message" id="purpose-message">
+                                <option value="" selected disabled>Choose one</option>
+                                <option value="reservation question">Reservation Question</option>
+                                <option value="general inquiry">General Inquiry</option>
+                                <option value="website suggestion">Website Suggestion</option>
+                            </select> -->
+                        </div>
+                    <div class="form-item column2">
+                        <label for="feedback"> Write your message here:</label>
+                    </div>
+                    <div class="column3">
+                        <textarea name="feedback" id="feedback" cols="60" rows="10" placeholder="Type your message here"></textarea>
+                    </div>
+                    <div class="form-item column2">
+                        <label for="subcription">Please subscribe me to the monthly newsletter</label> 
+                        <div class="column3">
+                            <input type="checkbox" id="subcription" name="subcription">
+                        </div> 
+                    </div>
+                </fieldset>
+                <div class="button">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+        <section class="map">
+            <h2>Adventure.Rafting.Team location</h2>
+            <p>Adventure.Rafting.Team building next to the Camp Uruyen, Bolivar Venezuela</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127035.50536693497!2d-62.45375!3d5.7333605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dc6caeed4c1c9ef%3A0x431e178d3bedc1b3!2sUruyen!5e0!3m2!1sen!2sus!4v1697309331865!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy;2023 👍 Rafting Site Document 👍 Luis Navarro 👍 WDD 130</p>
+        <nav class="socialinks">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook-logo.png" alt="Facebook Logo">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="images/twitter-logo.png" alt="Twitter Logo">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram-logo.png" alt="Instagram Logo">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
