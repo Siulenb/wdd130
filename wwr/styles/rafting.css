@@ -438,7 +438,7 @@ button:hover {
     align-items: center;
 }
 
-#popular:hover {
+.popular:hover {
     background-color: var(--nav-hover-background-color);
 }
 
