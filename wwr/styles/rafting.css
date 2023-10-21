@@ -447,7 +447,7 @@ button:hover {
     justify-self: center;
 }
 
-.trip h3 {
+.trip h3,p {
     text-align: center;
     font-weight: lighter;
     margin: 0;
