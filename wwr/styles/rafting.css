@@ -463,3 +463,22 @@ button:hover {
 .trip figure {
     align-self: center;
 }
+
+/* Table trip */
+
+table, td, th{
+  border: 1px solid #333;
+  border-collapse: collapse;
+  padding: 15px;
+  margin: 25px;
+}
+
+th {
+  background-color: var(--nav-link-color);
+  color: var(--nav-hover-link-color);
+}
+
+td {
+    background-color: var(--nav-hover-background-color);
+}
+
